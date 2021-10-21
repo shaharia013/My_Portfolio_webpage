@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 height=device-height" >
+    <title>Contact</title>
+    <link rel="stylesheet" href="./CSS files/contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="navbar">
+    <div class="logo">S <span>Z</span>C </div>
+    <ul>
+      <a href="./index.html">
+        <li>Home</li></a>
+    </ul>
+    
+</div>
+    <section class="contact_container">
+<form action="" id="myForm">
+        <!-- Login form -->
+        <div class="card">
+            <div class="inner_card">
+            <div class="card_content">
+           <h2>&#9635 Let's Talk</h2>
+                <input type="text" class="in" placeholder="FirstName" required>
+                <input type="text" class="in" placeholder="LastName" required>
+                <input type="email" class="in" placeholder="E-mail" required>
+                <input type="text" class="in" placeholder="Subject" id="sub" required>
+                <input type="text" class="in" placeholder="Message" id="me" required>
+
+                <button class="btn" onclick="done(),resetForm()" >SEND</button>
+                <button class="btn1" onclick="resetForm()">RESET</button>
+            </div>
+        </div>
+        </div>
+    </form>
+      
+    </section>
+    <footer>
+        <p class="footer-text">&copy 2023 Created by</p>
+        <p class="footer-text">Shaharia Zaman Choudhry</p>
+    
+    </footer>
+
+    <script>
+        var card = document.getElementById("card");
+        function done(){
+            alert(" Message has been sent");
+            
+        }
+        function resetForm() {
+                document.getElementById("myForm").reset();
+            }
+    
+    </script>
+    
+</body>
+</html>

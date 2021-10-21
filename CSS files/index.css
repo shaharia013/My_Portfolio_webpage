@@ -1,0 +1,308 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   font-family: 'Poppins', sans-serif;
+   background-color:rgb(136, 18, 233);
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(233, 39, 39);
+    font-size: 20px;
+    color: #fff;
+}
+.header{
+    background-color:rgb(136, 18, 233);
+    height: 100vh;
+}
+
+.logo{
+    font-weight: bolder;
+    font-size: 50px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    margin-block-start: -30px;
+    padding: 10px 3px;
+    display: flex ;
+    align-items: center;
+    flex-wrap: nowrap;
+    
+}
+span{
+    font-size: 70px;
+    font-weight: 900;
+    font-style: italic;
+    color: rgb(42, 10, 71);
+    margin-left: 3px;
+    margin-right: 10px;
+    
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    
+}
+ul{
+    width: 370px;
+    font-size: 19px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px 0 60px;
+   margin-right:100px;
+    
+}
+nav ul li{
+    list-style: none;
+    margin-top: 20px;
+    text-decoration: none;
+    position: relative;
+    margin-left: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+
+    
+   
+
+}
+nav ul li:hover{
+    color: rgb(206, 18, 105);
+    font-weight: bolder;
+  
+}
+
+.head_area{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+}
+.head_text{
+    margin-left: 60px;
+    margin-top: 80px;
+    margin-bottom: 300px;
+    
+}
+h1{
+    font-size: 35px;
+    font-weight: 900;
+    
+    
+}
+p{
+   
+   font-size: 20px;
+   font-weight: bold;
+   margin-top: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    width: 10px ;
+    padding: 0 20px;
+}
+a:focus{
+    outline: none;
+}
+.link{
+    color: none;
+}
+.btn{
+    width: 150px;
+    height: 50px;
+    position: relative;
+    background-color: rgb(94, 6, 175);
+    border-radius: 40px;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #fff;
+    color: rgb(136, 18, 233);
+    font-weight: bolder;
+    font-size:20px;
+    padding-bottom: 10px;
+}
+.social-media{
+    padding-bottom: 200px;
+    margin-right: 20px;
+    
+}
+.social{
+    margin: 20px 20px 0 0 ;
+    position: sticky;
+}
+.social:active{
+    transform: scale(1.5,1.5);
+  
+} 
+footer{
+    font-weight: bold;
+    padding: 5px 10px;
+    margin: 80px 0 30px 20px;
+}
+
+
+
+
+
+
+
+
+
+
+/* Responsive design */
+
+/* for small display */
+
+@media only screen and (max-width:350px){
+    .logo{
+       font-size: 20px;
+      margin-left: 10px;
+      
+   }
+   span{
+       font-size: 30px;
+   }
+   ul{
+       font-size: 10px;
+       padding-left: 30px;
+       margin-right: 50px;
+       margin-block-start: -20px;
+       display: flex;
+       flex-direction: row;
+       flex-wrap: wrap;
+   }
+   
+    a{
+       width:0 ;
+       padding: 0; 
+       margin: 0 20px;
+   }
+   a:focus{
+       outline: none;
+   }
+   
+.head_text{
+    margin-left: 18px;
+}
+h1{
+    font-size: 15px;
+} 
+p{
+    font-size: 11px ;
+}
+.btn{
+    width: 100px;
+    height: 30px;
+    margin-block-start: -10px;
+    font-size: 11px;
+}
+.btn:hover{
+    font-size: 11px;
+    padding-bottom: 20px;
+}
+
+.social-media{
+    margin-left: 20px;
+}
+.social{
+    margin-bottom: 20px;
+    padding-left: 40%;
+
+}
+.social:hover{
+    transform: none;
+}
+.social-icons{
+    width: 30px;
+    height: 20px;
+}
+
+
+.footer-text{
+font-size: 11px ;
+}
+footer{
+    margin-block-start: -10px;
+}
+
+}
+
+
+
+
+
+/* For small - medium display */
+
+@media screen and (min-width:350px) and (max-width:550px) {
+.logo{
+       font-size: 20px;
+      margin-left: 20px;
+   }
+   span{
+       font-size: 30px;
+   }
+   ul{
+       font-size: 60%;
+       padding: 0 10px 0 40px;
+       margin-right: 50px;
+       margin-block-start: -20px;
+   }
+   a{
+       width:0 ;
+       padding: 0; 
+       margin: 0 20px;
+   }
+   a:focus{
+       outline: none;
+   }
+   
+   .head_text{
+    margin-left: 18px;
+    margin-top: 60px
+}
+h1{
+    font-size: 20px;
+} 
+p{
+    font-size: 15px ;
+}
+.btn{
+    width: 110px;
+    height: 40px;
+    margin-block-start: -10px;
+    font-size: 15px;
+}
+.btn:hover{
+    font-size: 17px;
+    padding-bottom: 30px;
+}
+
+.social-media{
+    margin-left: 20px;
+}
+.social{
+    margin-bottom: 20px;
+    padding-left: 40%;
+
+}
+.social:hover{
+    transform: none;
+}
+.social-icons{
+    width: 30px;
+    height: 30px;
+}
+footer{
+    margin-block-start: -60px;
+}
+}
